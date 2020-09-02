@@ -60,7 +60,7 @@ Markdown cheat sheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Je focus:** -surface plane-
 
-**Je opdracht:** -link naar de website die je gaat namaken óf de naam van je eigen ontwerp-
+**Je opdracht:** -https://www.iamsterdam.com/en	ik heb nog mijn twijfels maar deze website vind ik persoonlijk erg mooi en om die reden wil ik deze namaken-
 
 **Screenshot(s):**
 
