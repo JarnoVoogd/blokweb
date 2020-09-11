@@ -68,4 +68,4 @@ Markdown cheat sheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Breakdown-schets(en):**
 
-(images/breakdown-schets.svg)
+(images/breakdown-schets.png)
