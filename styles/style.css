@@ -1,5 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Avenir&display=swap');
+
 /* CSS Document */
 *, *::after, *::before {
   box-sizing:border-box;  
 }
 
+html{
+  width: 100vw;
+  height: 100vw;
+}
+
+body{
+  background-size: cover;
+  position:relative;
+  padding:1em 0.4em 0em 0em;
+  /* overflow: hidden; */
+  min-height:100vh;
+  z-index: 2;
+  background-color: black;
+  margin-bottom: 2em;
+}
+
+img.headerFoto{
+  overflow: hidden;
+  transform: translate(-10em,5.5em);
+  height: 38em;
+  width: auto;
+  z-index: 1;
+  position: absolute;
+}
+
+header:first-of-type h1{
+  z-index: 2;
+  font-family: 'Roboto';
+  position: absolute;
+  font-weight: 700;
+  color: white;
+  transform: translate(0em, 7em);
+  padding: 0em 0.5em 0em 0.5em;
+  text-align: center;
+  font-size: 230%;
+
+}
+
+nav{
+  display: flex;
+  top:0;
+  background-color: red;
+  height: 3.125em;
+  width: 23.438em;
+  position: absolute;
+  transform: translate(-0.5em, 0em);
+}
+
+img.logo{
+  
+}
