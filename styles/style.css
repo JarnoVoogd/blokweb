@@ -5,20 +5,28 @@
   box-sizing:border-box;  
 }
 
-html{
+/* html{
   width: 100vw;
   height: 100vw;
-}
+} */
 
 body{
   background-size: cover;
   position:relative;
-  padding:1em 0.4em 0em 0em;
+  padding:1em 0em 0em 0em;
   /* overflow: hidden; */
   min-height:100vh;
-  z-index: 2;
-  background-color: black;
-  margin-bottom: 2em;
+  background-color: white;
+  margin-bottom: 10em;
+}
+
+img.zwartvlak{
+  height: 6em;
+  width: 24.438em;
+  position: absolute;
+  left:0;
+  transform: translate(-1.5em)
+
 }
 
 img.headerFoto{
@@ -27,7 +35,8 @@ img.headerFoto{
   height: 38em;
   width: auto;
   z-index: 1;
-  position: absolute;
+  position: relative;
+  margin-bottom: 1em;
 }
 
 header:first-of-type h1{
@@ -45,14 +54,134 @@ header:first-of-type h1{
 
 nav{
   display: flex;
-  top:0;
-  background-color: red;
+  top: 0;
+  left:-0.5em;
+  background-color:black;
   height: 3.125em;
   width: 23.438em;
-  position: absolute;
-  transform: translate(-0.5em, 0em);
+  position: fixed;
+  /* position: sticky; */
+  /* transform:translate(-0.5em, -40.8em) */
+}
+
+header ul{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+header li{
+  color: white;
+  list-style: none;
+  font-family: 'Roboto';
+  justify-content: flex-end;
+
+}
+
+span > li{
+  margin-left: 12em;
 }
 
 img.logo{
-  
+
+  position: absolute;
+  width: 6.562em;
+  height: auto;
+  bottom: -1.9em;
+  right: 0.9em;
+
+
+}
+
+
+h2:first-of-type{
+  position: relative;
+  transform: translate(-0.3em, 5em);
+  font-family: 'Roboto';
+  font-size: 1.125em;
+  text-align: center;
+  font-weight: 300;
+  background-color: #f7f7f7;
+  padding: 1.500em 0.5em;
+  margin: 0em 0.9em
+}
+
+h3:first-of-type{
+  position: relative;
+  transform: translate(-0.3em, 6em);
+  font-family: 'Roboto';
+  font-size: 1.063em;
+  text-align: left;
+  font-weight: 900;
+  border-style: solid;
+  border-color: #fd000d;
+  border-width: 0 0 0 0.250em;;
+  padding: 0 0 0 0.625em;
+  margin: 1.250em 0.938em;
+  letter-spacing: 0.02em;
+
+}
+
+img.grachtbrug{
+  position: relative;
+  width: 20.414em;
+  transform: translate(0.7em, 3.5em);
+  z-index: 1;
+}
+
+h4:first-of-type{
+  position: relative;
+  transform: translate(-0.3em, 14.5em);
+  padding: 0.625em 0 0.625em 0;
+  font-size: 1.063em;
+  font-family: 'Roboto';
+  font-weight: 500;
+  margin: 0 0.9em 0 0.9em;
+  background-color: white;
+  z-index: 9;
+  text-align: center;
+}
+
+img.grachtfiets{
+  position: relative;
+  width: 20.414em;
+  height: 13.589em;
+  transform: translate(0.7em, 0em);
+  margin-top: 2em;
+}
+
+h4:nth-of-type(2){
+  position: relative;
+  transform: translate(-0.3em, 13.2em);
+  padding: 0.625em 0 0.625em 0;
+  font-size: 1.063em;
+  font-family: 'Roboto';
+  font-weight: 500;
+  margin: 0 7.5em 0 0.9em;
+  background-color: white;
+  z-index: 9;
+  text-align: left;
+
+}
+
+img.molenwater{
+  position: relative;
+  width: 20.414em;
+  height: 13.589em;
+  transform: translate(0.7em, -3.4em);
+  margin-top: 2em;
+}
+
+h4:nth-of-type(3){
+  position: relative;
+  transform: translate(-0.3em, 9.8em);
+  padding: 0.625em 0 0.625em 0;
+  font-size: 1.063em;
+  font-family: 'Roboto';
+  font-weight: 500;
+  margin: 0 5em 0 0.9em;
+  background-color: white;
+  z-index: 9;
+  text-align: left;
+
 }
