@@ -38,7 +38,7 @@ Markdown cheat sheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Stand van zaken
 
--dit ging goed & dit was lastig-
+-Ik heb een goed begin, ik heb de main layout goed gemaakt-
 
 **Screenshot(s):**
 
@@ -46,11 +46,11 @@ Markdown cheat sheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Agenda voor meeting
 
--samen met je groepje opstellen-
+-bespreken van navbar met hamburgermenu-
 
 ### Verslag van meeting
 
--na afloop snel uitkomsten vastleggen-
+-navbar is duidelijk-
 
 
 

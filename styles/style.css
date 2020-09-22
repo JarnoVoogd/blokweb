@@ -5,82 +5,72 @@
   box-sizing:border-box;  
 }
 
-/* html{
-  width: 100vw;
-  height: 100vw;
-} */
+html{
+  width: 100%;
+}
 
 body{
   background-size: cover;
   position:relative;
-  padding:1em 0em 0em 0em;
+  padding:0em 0em 0em 0em;
   /* overflow: hidden; */
   min-height:100vh;
   background-color: white;
-  margin-bottom: 10em;
+  margin: 0em 0em 10em 0em;
 }
 
-img.zwartvlak{
-  height: 6em;
-  width: 24.438em;
-  position: absolute;
-  left:0;
-  transform: translate(-1.5em)
 
+/* Header */
+
+header{
+  background-size: cover;
+  width: 100%;
+  height: 58em;
+  margin: 0em
+  
 }
 
-img.headerFoto{
-  overflow: hidden;
-  transform: translate(-10em,5.5em);
-  height: 38em;
-  width: auto;
-  z-index: 1;
-  position: relative;
-  margin-bottom: 1em;
-}
 
-header:first-of-type h1{
+
+h1:first-of-type {
   z-index: 2;
   font-family: 'Roboto';
   position: absolute;
   font-weight: 700;
   color: white;
-  transform: translate(0em, 7em);
+  transform: translate(0em, 11em);
   padding: 0em 0.5em 0em 0.5em;
   text-align: center;
   font-size: 230%;
-
 }
+
+
+/* Navigatie */
 
 nav{
   display: flex;
   top: 0;
-  left:-0.5em;
   background-color:black;
   height: 3.125em;
   width: 23.438em;
   position: fixed;
-  /* position: sticky; */
-  /* transform:translate(-0.5em, -40.8em) */
+  z-index: 100;
+  width: 100%;
+  
 }
 
 header ul{
   display: flex;
   justify-content: space-between;
-
+  width: 100%;
 }
 
 header li{
   color: white;
   list-style: none;
   font-family: 'Roboto';
-  justify-content: flex-end;
-
 }
 
-span > li{
-  margin-left: 12em;
-}
 
 img.logo{
 
@@ -89,22 +79,86 @@ img.logo{
   height: auto;
   bottom: -1.9em;
   right: 0.9em;
-
-
 }
 
 
+/* Hamburgermenu */
+.uitklap ul{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 2em;
+  left: 0em;
+  background-color: white;
+  min-width: 100vh;
+  min-height: 100vh;
+
+  display: none;
+}
+
+.uitklap li{
+  color: black;
+}
+
+button.menu{
+  position: absolute;
+  background: none;
+  border: none;
+  top: 0.5em;
+  left: 1em;
+}
+
+button.menu img{
+  width: 2.5em;
+}
+
+
+
+
+.hamburger {
+  width: 1.7em;
+  height: 1.2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 199;
+  position: absolute;
+  left: 1.5em;
+  top: 1.1em;
+  cursor: pointer;
+  place-items: center;
+}
+
+
+ span {
+  width: 20px;
+  height: 2px;
+  background: white;
+  display: block;
+}
+
+
+
+
+
+/* Corona melding */
+
 h2:first-of-type{
   position: relative;
-  transform: translate(-0.3em, 5em);
+  transform: translate(-0.3em, 3em);
   font-family: 'Roboto';
   font-size: 1.125em;
   text-align: center;
   font-weight: 300;
   background-color: #f7f7f7;
   padding: 1.500em 0.5em;
-  margin: 0em 0.9em
+  margin: 0em 0.9em;
+  width: 95%;
 }
+
+
+/* Kopje - articles */
 
 h3:first-of-type{
   position: relative;
@@ -119,17 +173,11 @@ h3:first-of-type{
   padding: 0 0 0 0.625em;
   margin: 1.250em 0.938em;
   letter-spacing: 0.02em;
-
 }
 
-img.grachtbrug{
-  position: relative;
-  width: 20.414em;
-  transform: translate(0.7em, 3.5em);
-  z-index: 1;
-}
+/* Articles */
 
-h4:first-of-type{
+.art1 h4{
   position: relative;
   transform: translate(-0.3em, 14.5em);
   padding: 0.625em 0 0.625em 0;
@@ -140,48 +188,72 @@ h4:first-of-type{
   background-color: white;
   z-index: 9;
   text-align: center;
+  width: 80%;
+  max-width: 22.5em;
 }
 
-img.grachtfiets{
+img.grachtbrug{
   position: relative;
-  width: 20.414em;
-  height: 13.589em;
-  transform: translate(0.7em, 0em);
-  margin-top: 2em;
+  /* width: 20.414em; */
+  width: 95%;
+  max-width: 27em;
+  height: auto;
+  margin: 3.5em 0.7em 0em 0.7em;
 }
 
-h4:nth-of-type(2){
+.art2 h4{
   position: relative;
   transform: translate(-0.3em, 13.2em);
   padding: 0.625em 0 0.625em 0;
   font-size: 1.063em;
   font-family: 'Roboto';
   font-weight: 500;
-  margin: 0 7.5em 0 0.9em;
+  margin: 0 0.9em 0 0.9em;
   background-color: white;
   z-index: 9;
-  text-align: left;
-
+  text-align: center;
+  width: 80%;
+  max-width: 22.5em;
 }
 
-img.molenwater{
+img.grachtfiets{
   position: relative;
-  width: 20.414em;
-  height: 13.589em;
-  transform: translate(0.7em, -3.4em);
-  margin-top: 2em;
+  width: 95%;
+  max-width: 27em;
+  height: auto;
+  /* transform: translate(0.7em, 0em); */
+  margin: 0em 0.7em 0em 0.7em
 }
 
-h4:nth-of-type(3){
+.art3 h4{
   position: relative;
-  transform: translate(-0.3em, 9.8em);
+  transform: translate(-0.3em, 11.2em);
   padding: 0.625em 0 0.625em 0;
   font-size: 1.063em;
   font-family: 'Roboto';
   font-weight: 500;
-  margin: 0 5em 0 0.9em;
+  margin: 0 0.9em 0 0.9em;
   background-color: white;
   z-index: 9;
-  text-align: left;
+  text-align: center;
+  width: 80%;
+  max-width: 22.5em;
+}
 
+img.molenwater{
+  position: relative;
+  width: 95%;
+  max-width: 27em;
+  height: auto;
+  /* transform: translate(0.7em, -3.4em); */
+  margin: 0em 0.7em 0em 0.7em
+}
+
+main{
+  margin: 0 0.5em 0 0.5em;
+}
+
+article{
+  margin: none;
+  padding: none;
 }
