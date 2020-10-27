@@ -1,0 +1,689 @@
+@import url('https://fonts.googleapis.com/css?family=Avenir&display=swap');
+
+:root {
+  --accentkleur: #ff3e3e;
+  --achtergrond-primair: white;
+	--achtergrond-secundair: #f7f7f7;
+  --achtergrond-tertair: black;
+  --textkleur-secundair: #4d4d4f;
+  }	
+
+/* CSS Document */
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+html{
+  width: 100%;
+}
+
+main{
+  padding: 0 1em 0 1em;
+}
+
+body{
+  background-size: cover;
+  position:relative;
+  padding:0em 0em 0em 0em;
+  min-height:100vh;
+  background-color: var(--achtergrond-primair);
+  margin: 0em;
+}
+
+/* Header */
+
+header{
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 60em;
+  margin: 0em;
+  position: relative;
+}
+
+
+
+h1:first-of-type {
+  z-index: 2;
+  font-family: 'Roboto';
+  position: absolute;
+  font-weight: 700;
+  color: var(--achtergrond-primair);
+  top: 11em;
+  padding: 0em 0.5em 0em 0.5em;
+  text-align: center;
+  font-size: 2.250em;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  text-shadow: 0 0 16px rgba(0,0,0,.95);
+}
+
+
+/* Navigatie */
+
+nav{
+  display: flex;
+  top: 0;
+  background-color: var(--achtergrond-tertair);
+  height: 3.5em;
+  width: 100vh;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  
+}
+
+header ul{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+header li{
+  color: var(--achtergrond-primair);
+  list-style: none;
+  font-family: 'Roboto';
+}
+
+
+img.logo{
+  position: absolute;
+  width: 7.562em;
+  height: auto;
+  bottom: -2.16em;
+  right: 0.9em;
+}
+
+
+/* Hamburgermenu */
+.uitklap{
+  display: none;
+}
+
+.uitklap ul{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 2.3em;
+  left: 0em;
+  background-color: var(--achtergrond-primair);
+  min-width: 100vh;
+  min-height: 100vh;
+}
+
+.uitklap li{
+  color: var(--achtergrond-tertair);
+
+}
+
+button{
+  background: none;
+  width: 7em;
+  border: none;
+  display: block;
+}
+
+button .hamburger {
+  background: none;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 199;
+  position: absolute;
+  left: 1.5em;
+  top: 1.75em;
+  cursor: pointer;
+  place-items: center;
+  display: flex;
+  height: 1.25em;
+}
+
+button span {
+  width: 20px;
+  height: 2px;
+  background: var(--achtergrond-primair);
+  display: block;
+  transition: 0.5s;
+}
+
+button h5{
+  color: var(--achtergrond-primair);
+  background: none;
+  left: 3em;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-family: 'Roboto';
+  font-size: 1em;
+  margin: 0;
+  letter-spacing: 0.15em;
+}
+
+/*Onderste*/ 
+ .menu .hamburger span:nth-last-child(3) {
+  transform: rotate(45deg) translate(0.25em,0.47em);
+}
+
+/*Middelste*/
+.menu .hamburger span:nth-last-child(2) {
+  opacity: 0;
+  transform: translate(-5em, 0);
+}
+
+/*Bovenste*/
+.menu .hamburger span:nth-last-child(1) {
+  transform: rotate(-45deg) translate(0.3em,-0.5em);
+}
+
+
+/* Corona melding */
+
+h2:first-of-type{
+  position: relative;
+  transform: translate(0em, 3em);
+  font-family: 'Roboto';
+  font-size: 1.125em;
+  text-align: center;
+  font-weight: 400;
+  background-color: var(--achtergrond-secundair);
+  padding: 1.500em 0.5em;
+  width: 100%;
+  max-width: 23.5em;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+/* Kopjes artiekelen  */
+main h3{
+  position: relative;
+  font-family: 'Roboto';
+  font-size: 1.063em;
+  text-align: left;
+  font-weight: 900;
+  border-style: solid;
+  border-color: var(--accentkleur);
+  border-width: 0 0 0 0.3em;;
+  padding: 0 0 0 0.625em;
+  letter-spacing: 0.02em;
+  max-width: 24.70em;
+  margin: 6em auto -2em auto;
+}
+
+/* ------Artiekelen 1-3-----*/
+
+.artikelen1-3{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  transform: translate(0em, 3.5em);
+  max-width: 26.250em;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.art1, .art2, .art3{
+  position: relative;
+  margin-bottom: 1em;
+}
+
+/* Fotos - artiekelen 1-3 */
+img.grachtbrug, img.grachtfiets, img.molenwater{
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+
+/* tekst artikelen 1-3 */
+.art1 h4, .art2 h4, .art3 h4{
+  position: absolute;
+  padding: 0.625em;
+  font-size: 1.063em;
+  font-family: 'Roboto';
+  font-weight: 500;
+  background-color: var(--achtergrond-primair);
+  z-index: 9;
+  text-align: center;
+  bottom: 5%;
+}
+
+/* text specefiek artiekel 1 */
+.art1 h4{
+  width: 100%;
+}
+
+
+/* -----Artiekelen 4-5 -----*/
+
+.artikelen4-5{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  transform: translate(0em, 3.5em);
+  margin: 0em auto 0 auto;
+  max-width: 26.250em;
+}
+
+.art4, .art5{
+  position: relative;
+  margin-bottom: 1.5em;
+}
+
+/* Kopje artiekelen 4-5 */
+h3:nth-last-child(2) {
+  margin-top: 0;
+}
+
+/* Fotos - artiekelen 4-5 */
+img.centraal, img.rijksmuseum{
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+/* paragrafen - artiekelen 4-5 */
+.art4 p, .art5 p{
+  position: relative;
+  font-family: 'Roboto';
+  font-size: 0.9em;
+  text-align: left;
+  font-weight: 400;
+  padding-top: 0.5em;
+  margin: 0;
+  width: 100%;
+  line-height: 1.6;
+  color: var(--textkleur-secundair);
+}
+
+/* links - artiekelen 4-5 */
+.art4 h6, .art5 h6{
+  text-decoration: underline;
+  color: var(--accentkleur);
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 0.9em;
+  margin: 0;
+  padding-top: 0.7em;
+}
+/* tekst artikelen 4-5 */
+.art4 h4, .art5 h4{
+  position: absolute;
+  padding: 0.625em;
+  font-size: 1.063em;
+  font-family: 'Roboto';
+  font-weight: 500;
+  background-color: var(--achtergrond-primair);
+  z-index: 9;
+  bottom: 39%;
+  text-align: center;
+}
+
+
+/* -----Carroussel------ */
+
+.caroussel{
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0em auto 0 auto;
+  max-width: 26.250em;
+}
+
+img.surfer, img.koppel, img.muiderslot{
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.car1, .car2, .car3{
+  margin-top: 4em;
+  padding: 0 0 0.1em 0;
+  box-shadow: -7px 10px 7px var(--textkleur-secundair);  
+}
+
+.car1 h4, .car2 h4, .car3 h4{
+  font-size: 1.250em;
+  font-weight: 600;
+  font-family: 'Roboto';
+  margin: 0.5em 1.5em 0.5em 0.9em;
+}
+
+.car1 p, .car2 p, .car3 p{
+  font-size: 0.750em;
+  font-family: 'Roboto';
+  font-weight: 400;
+  margin: 0 1.5em 0 1.5em;
+}
+
+.car1 h6, .car2 h6, .car3 h6{
+  font-size: 0.750em;
+  font-family: 'Roboto';
+  font-weight: 400;
+  margin: 2.5em 1.5em 2em 1.5em;
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--accentkleur);
+  width: max-content; 
+}
+
+.car1 h6:hover, .car2 h6:hover, .car3 h6:hover{
+  color: var(--accentkleur);
+}
+
+.car2{
+  display: none;
+}
+
+.car3{
+  display: none;
+}
+
+
+
+/* -----Articles 6-11----- */
+
+
+.artikelen6-11{
+  display: grid;
+  grid-template-rows: 0.2fr 1fr 0.9fr 1fr 0.9fr 1fr;
+  transform: translate(0em, 2.5em);
+  margin: 1em auto 0 auto;
+  max-width: 26.250em;
+}
+
+.art6, .art7, .art8, .art9, .art10, .art11{
+  position: relative;
+  margin-bottom: 1.5em;
+}
+
+/* Fotos - artiekelen 6-11 */
+img.rokin, img.haven, img.collega, img.macbook, img.studenten, img.business{
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+/* paragrafen - artiekelen 6-11 */
+.art6 p, .art7 p, .art8 p, .art9 p, .art10 p, .art11 p{
+  position: relative;
+  font-family: 'Roboto';
+  font-size: 0.9em;
+  text-align: left;
+  font-weight: 400;
+  padding-top: 0.5em;
+  margin: 0;
+  width: 100%;
+  line-height: 1.6;
+  color: var(--textkleur-secundair);
+}
+
+/* links - artiekelen 6-11 */
+.art6 h6, .art7 h6, .art8 h6, .art9 h6, .art10 h6, .art11 h6{
+  text-decoration: underline;
+  color: var(--accentkleur);
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 0.9em;
+  margin: 0;
+  padding-top: 0.7em;
+}
+
+/* tekst artikelen 6-11 */
+.art6 h4, .art7 h4, .art8 h4, .art9 h4, .art10 h4, .art11 h4{
+  position: absolute;
+  padding: 0.625em;
+  font-size: 1.063em;
+  font-family: 'Roboto';
+  font-weight: 500;
+  background-color: var(--achtergrond-primair);
+  z-index: 9;
+  text-align: center;
+  bottom: 38%;
+}
+
+
+/* Zoekbalk */
+.zoekbalk h2{
+  margin: 3em auto 0 auto;
+  background: none;
+}
+
+/* ------Footer------ */
+footer{
+  background-color: var(--achtergrond-secundair);
+  transform: translate(0em, 5em);
+  padding: 0 1em 4em 1em;
+}
+
+.footerContent{
+  display: grid;
+  grid-template-rows: 1fr;
+  max-width: 26.250em;
+  margin: 0 auto 0 auto;
+}
+
+.kopje1, .kopje2, .kopje3{
+  display: grid;
+  font-family: 'Roboto';
+  justify-self: start;
+}
+
+/* positionering content */
+.footerContent{
+  transform: translate(0, 3em);
+}
+
+/* titels */
+.kopje1 h3, .kopje2 h3, .kopje3 h3{
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.8em;
+  border: none;
+  padding: 0;
+  margin: 2em 0 0.5em 0;
+}
+
+/* items */
+.kopje1 ul, .kopje2 ul, .kopje3 ul{
+  display: grid;
+  list-style: none;
+  padding: 0;
+  grid-template-rows: 1fr;
+}
+
+.kopje1 li, .kopje2 li, .kopje3 li{
+  padding-bottom: 0.75em;
+  font-size: 0.8em;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+
+.kopje1 li:hover a, .kopje2 li:hover a, .kopje3 li:hover a{
+  border-color: var(--accentkleur);
+  color: var(--achtergrond-tertair);
+}
+
+.kopje1 li a, .kopje2 li a, .kopje3 li a{
+  border-bottom: 1px solid var(--achtergrond-tertair);
+  color: var(--textkleur-secundair) ;
+}
+
+/* socials plaatjes */
+.socials{
+  max-width: 26.250em;
+  margin: 3em auto 0 auto; 
+  border-top: 1px solid rgba(77,77,79,.2);
+  border-bottom: 1px solid rgba(77,77,79,.2);
+}
+
+.socials img{
+  width: 1.250em;
+}
+
+.socials ul{
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 1em;
+  padding: 0em;
+}
+
+.socials li{
+  justify-self: center;
+}
+
+article{
+  margin: none;
+  padding: none;
+}
+
+
+@media (min-width: 28.938em){
+
+  .caroussel{
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1em;
+    max-width: 100%;
+  }
+
+  .car2{
+    display: block;
+  }
+}
+
+
+@media (min-width: 46.875em){
+
+  h1:first-of-type{
+    font-size: 3em;
+    top: 8em;
+  }
+
+  h2:first-of-type{
+    max-width:40em;
+  }
+
+  main h3{
+    max-width: 32.7em;
+    font-size: 1.375em;
+    margin: 4em auto -1em auto;
+  }
+  
+  .artikelen4-5 p, .artikelen6-11 p{
+    font-size: 1.063em;
+  }
+
+  .artikelen1-3{
+    max-width:45.000em;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1em;
+
+  }
+
+  .artikelen4-5{
+    max-width:45.000em;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1em;
+  }
+
+  .artikelen4-5 h4{
+    bottom: 42%
+  }
+
+  .artikelen6-11{
+    max-width:45.000em;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1em;
+  }
+
+  .artikelen6-11 h4{
+    bottom: 59.5%
+  }
+
+  .caroussel{
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1.5em;
+  }
+   
+  .caroussel p{
+    font-size: 0.875em;
+  }
+  .car3{
+    display: block;
+  }
+
+  .car1 h4, .car2 h4, .car3 h4{
+    font-size: 1.5em;
+  }
+
+  .footerContent{
+    max-width: 45em;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: start;
+
+  }
+
+  .kopje1 ul, .kopje2 ul, .kopje3 ul{
+    display: grid;
+    list-style: none;
+    padding: 0;
+    grid-template-rows: 1fr;
+    align-items: start;
+  }
+
+  .socials{
+    max-width: 45em;
+  }
+
+  .socials ul{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
+@media (min-width:61.125em) {
+
+  h2:first-of-type{
+    max-width: 52em;
+  }
+
+  main h3{
+    max-width: 42.25em;
+  }
+
+  .artikelen1-3, .artikelen4-5, .artikelen6-11{
+    max-width: 58.250em;
+  }
+  
+  .artikelen4-5 h4 {
+    bottom: 32%;
+  }
+
+  .artikelen6-11 h4 {
+    bottom: 51.5%;
+  }
+
+  .footerContent{
+    max-width: 58.250em;
+  }
+
+  .socials{
+    max-width: 58.250em;
+  }
+
+  .caroussel{
+    column-gap: 2em;
+  }
+
+
+}
+
+@media (min-width: 112.813em) {
+
+
+}
