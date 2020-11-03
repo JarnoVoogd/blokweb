@@ -15,6 +15,7 @@
 
 html{
   width: 100%;
+  line-height: 1.6;
 }
 
 main{
@@ -30,6 +31,9 @@ body{
   margin: 0em;
 }
 
+* a{
+  text-decoration: none;
+}
 /* Header */
 
 header{
@@ -148,10 +152,10 @@ button span {
   transition: 0.5s;
 }
 
-button h5{
+nav h5{
   color: var(--achtergrond-primair);
   background: none;
-  left: 3em;
+  left: -1.5em;
   position: relative;
   text-transform: uppercase;
   font-weight: 300;
@@ -159,6 +163,7 @@ button h5{
   font-size: 1em;
   margin: 0;
   letter-spacing: 0.15em;
+  top: 0.9em;
 }
 
 /*Onderste*/ 
@@ -249,6 +254,7 @@ img.grachtbrug, img.grachtfiets, img.molenwater{
   z-index: 9;
   text-align: center;
   bottom: 5%;
+  color: var(--achtergrond-tertair);
 }
 
 /* text specefiek artiekel 1 */
@@ -319,6 +325,7 @@ img.centraal, img.rijksmuseum{
   z-index: 9;
   bottom: 39%;
   text-align: center;
+  color: var(--achtergrond-tertair);
 }
 
 
@@ -340,7 +347,7 @@ img.surfer, img.koppel, img.muiderslot{
 .car1, .car2, .car3{
   margin-top: 4em;
   padding: 0 0 0.1em 0;
-  box-shadow: -7px 10px 7px var(--textkleur-secundair);  
+  box-shadow:-7px 7px 20px var(--textkleur-secundair);  
 }
 
 .car1 h4, .car2 h4, .car3 h4{
@@ -348,6 +355,7 @@ img.surfer, img.koppel, img.muiderslot{
   font-weight: 600;
   font-family: 'Roboto';
   margin: 0.5em 1.5em 0.5em 0.9em;
+  color: var(--achtergrond-tertair);
 }
 
 .car1 p, .car2 p, .car3 p{
@@ -355,6 +363,7 @@ img.surfer, img.koppel, img.muiderslot{
   font-family: 'Roboto';
   font-weight: 400;
   margin: 0 1.5em 0 1.5em;
+  color: var(--textkleur-secundair);
 }
 
 .car1 h6, .car2 h6, .car3 h6{
@@ -364,7 +373,8 @@ img.surfer, img.koppel, img.muiderslot{
   margin: 2.5em 1.5em 2em 1.5em;
   text-transform: uppercase;
   border-bottom: 2px solid var(--accentkleur);
-  width: max-content; 
+  width: max-content;
+  color: var(--achtergrond-tertair); 
 }
 
 .car1 h6:hover, .car2 h6:hover, .car3 h6:hover{
@@ -440,6 +450,7 @@ img.rokin, img.haven, img.collega, img.macbook, img.studenten, img.business{
   z-index: 9;
   text-align: center;
   bottom: 38%;
+  color: var(--achtergrond-tertair);
 }
 
 
@@ -625,7 +636,6 @@ article{
     max-width: 45em;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: start;
-
   }
 
   .kopje1 ul, .kopje2 ul, .kopje3 ul{

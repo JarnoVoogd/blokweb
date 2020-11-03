@@ -1,0 +1,645 @@
+@import url('https://fonts.googleapis.com/css?family=Avenir&display=swap');
+
+:root {
+  --accentkleur: #ff3e3e;
+  --achtergrond-primair: white;
+  --achtergrond-secundair: #f7f7f7;
+  --achtergrond-tertair: black;
+  --textkleur-secundair: #4d4d4f;
+  }	
+
+/* CSS Document */
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+html{
+  width: 100%;
+  line-height: 1.6;
+}
+
+main{
+  padding: 0 1em 0 1em;
+  margin-top: 12em;
+  max-width: 100vw;
+  position: relative;
+}
+
+body{
+  background-size: cover;
+  position:relative;
+  padding:0em 0em 0em 0em;
+  min-height:100vh;
+
+  background-color: var(--achtergrond-primair);
+  margin: 0em;
+}
+
+ a{
+  text-decoration: none;
+}
+/* Header */
+
+header{
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 15em;
+  margin: 0em;
+  position: relative;
+}
+
+/* Navigatie */
+
+nav{
+  display: flex;
+  top: 0;
+  background-color: var(--achtergrond-tertair);
+  height: 3.5em;
+  width: 100vh;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  
+}
+
+header ul{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+header li{
+  color: var(--achtergrond-primair);
+  list-style: none;
+  font-family: 'Roboto';
+}
+
+
+img.logo{
+  position: absolute;
+  width: 7.562em;
+  height: auto;
+  bottom: -2.15em;
+  right: 0.9em;
+}
+
+
+/* Hamburgermenu */
+.uitklap{
+  display: none;
+}
+
+.uitklap ul{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 2.3em;
+  left: 0em;
+  background-color: var(--achtergrond-primair);
+  min-width: 100vh;
+  min-height: 100vh;
+}
+
+.uitklap li{
+  color: var(--achtergrond-tertair);
+
+}
+
+button{
+  background: none;
+  width: 7em;
+  border: none;
+  display: block;
+}
+
+button .hamburger {
+  background: none;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 199;
+  position: absolute;
+  left: 1.5em;
+  top: 1.75em;
+  cursor: pointer;
+  place-items: center;
+  display: flex;
+  height: 1.25em;
+}
+
+button span {
+  width: 20px;
+  height: 2px;
+  background: var(--achtergrond-primair);
+  display: block;
+  transition: 0.5s;
+}
+
+nav h5{
+    color: var(--achtergrond-primair);
+    background: none;
+    left: -1.5em;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-family: 'Roboto';
+    font-size: 1em;
+    margin: 0;
+    letter-spacing: 0.15em;
+    top: 0.9em;
+}
+
+/*Onderste*/ 
+ .menu .hamburger span:nth-last-child(3) {
+  transform: rotate(45deg) translate(0.25em,0.47em);
+}
+
+/*Middelste*/
+.menu .hamburger span:nth-last-child(2) {
+  opacity: 0;
+  transform: translate(-5em, 0);
+}
+
+/*Bovenste*/
+.menu .hamburger span:nth-last-child(1) {
+  transform: rotate(-45deg) translate(0.3em,-0.5em);
+}
+
+
+/*  melding */
+
+.opening{
+    position: relative;
+    font-family: 'Roboto';
+    background-color: var(--achtergrond-secundair);
+    padding: 1.500em 0 0.5em 0;
+    width: 100%;
+    margin: 0;
+    top: 15em;
+}
+
+.styling{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: left;
+}
+
+.opening .styling p{
+    padding:0 1em 0 1.2em;
+    font-size: 0.813em;
+    margin: 0 auto 0.5em auto;
+    max-width: 33.000em;
+    width: 100%;
+    color: var(--textkleur-secundair);
+}
+
+.opening .styling h1{
+    padding:0 1em 0 0.8em;
+    font-size: 1.250em;
+    font-weight: 900;
+    margin: 0 auto 0.3em auto;
+    max-width: 21.5em;
+    width: 100%;
+}
+
+
+/* -----artiekelen----- */
+
+.artiekelen{
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(0,1fr);
+    z-index: 99;
+    width: 100%;
+    min-width: 0;
+    margin-top: -1em; 
+    max-width: 25.000em;
+    margin-right: 1em; 
+}
+
+
+* a{
+    text-decoration: underline;
+    color:var(--accentkleur)
+}
+
+.art1 h2, .art2 h2, .art3 h2, .art4 h2, .art5 h2, 
+.art6 h2, .art7 h2, .art8 h2, .art9 h2, .art10 h2, 
+.art11 h2, .art12 h2, .art13 h2, .art14 h2, .art15 h2,
+.art16 h2, .art17 h2, .art18 h2, .art19 h2, .art20 h2{
+    font-size: 0.95em;
+    font-weight: 500;
+    font-family: 'Roboto';
+    text-align: left;
+    margin: 1.5em 0 0.5em 0;
+    word-spacing: 0.05em;
+}
+
+.inleiding p, .art1 p, .art2 p, .art3 p, .art4 p,
+.art5 p, .art6 p, .art7 p, .art8 p, .art9 p, .art10 p,
+.art11 p, .art12 p, .art13 p, .art14 p, .art15 p,
+.art16 p, .art17 p, .art18 p, .art19 p, .art20 p {
+    font-size: 0.875em;
+    position: relative;
+    font-family: 'Roboto';
+    text-align: left;
+    max-width: 100%;
+    margin-top: 0.5em;
+    
+}
+
+.art1 img, .art2 img, .art3 img, .art4 img, .art5 img,
+.art6 img, .art7 img, .art8 img, .art9 img, .art10 img,
+.art11 img, .art12 img, .art13 img, .art14 img,
+.art15 img, .art16 img, .art17 img, .art18 img,
+.art19 img, .art20 img{
+    max-width: 25.000em;
+    width: 100%;
+}
+
+/* -----Carroussel------ */
+
+.caroussel{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 3em auto 0 auto;
+    max-width: 25.000em;
+    
+  }
+
+.caroussel a{
+    text-decoration: none;
+}
+
+h3{
+    position: relative;
+    font-family: 'Roboto';
+    font-size: 1.063em;
+    text-align: left;
+    font-weight: 900;
+    border-style: solid;
+    border-color: var(--accentkleur);
+    border-width: 0 0 0 0.3em;;
+    padding: 0 0 0 0.625em;
+    letter-spacing: 0.02em;
+    max-width: 24.70em;
+    margin: 3em 0 -2.5em 0;
+}
+  
+img.friet, img.restaurant, img.weekend{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.car1, .car2, .car3{
+    margin-top: 2em;
+    padding: 0 0 0.1em 0;
+    box-shadow:-7px 7px 20px var(--textkleur-secundair);  
+}
+
+.car1 h4, .car2 h4, .car3 h4{
+    font-size: 1.250em;
+    font-weight: 600;
+    font-family: 'Roboto';
+    margin: 0.5em 1.5em 0.5em 0.9em;
+    color: var(--achtergrond-tertair);
+}
+
+.car1 p, .car2 p, .car3 p{
+    font-size: 0.750em;
+    font-family: 'Roboto';
+    font-weight: 400;
+    margin: 0 1.5em 0 1.5em;
+    color: var(--textkleur-secundair);
+}
+
+.car1 h6, .car2 h6, .car3 h6{
+    font-size: 0.750em;
+    font-family: 'Roboto';
+    font-weight: 400;
+    margin: 2.5em 1.5em 2em 1.5em;
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--accentkleur);
+    width: max-content;
+    color: var(--achtergrond-tertair); 
+}
+
+.car1 h6:hover, .car2 h6:hover, .car3 h6:hover{
+    color: var(--accentkleur);
+}
+
+.car2{
+    display: none;
+}
+
+.car3{
+    display: none;
+}
+
+
+
+
+
+
+
+
+/* ------Footer------ */
+footer{
+    background-color: var(--achtergrond-secundair);
+    transform: translate(0em, 5em);
+    padding: 0 1em 4em 1em;
+    position: relative;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+.footerContent{
+    display: grid;
+    grid-template-rows: 1fr;
+    max-width: 26.250em;
+    margin: 0 auto 0 auto;
+}
+
+.kopje1, .kopje2, .kopje3{
+    display: grid;
+    font-family: 'Roboto';
+    justify-self: start;
+}
+
+/* positionering content */
+.footerContent{
+    transform: translate(0, 3em);
+}
+
+/* titels */
+.kopje1 h3, .kopje2 h3, .kopje3 h3{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 0.8em;
+    border: none;
+    padding: 0;
+    margin: 2em 0 0.5em 0;
+}
+  
+/* items */
+.kopje1 ul, .kopje2 ul, .kopje3 ul{
+    display: grid;
+    list-style: none;
+    padding: 0;
+    grid-template-rows: 1fr;
+}
+
+.kopje1 li, .kopje2 li, .kopje3 li{
+    padding-bottom: 0.75em;
+    font-size: 0.8em;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
+.kopje1 li:hover a, .kopje2 li:hover a, .kopje3 li:hover a{
+    border-color: var(--accentkleur);
+    color: var(--achtergrond-tertair);
+}
+
+.kopje1 li a, .kopje2 li a, .kopje3 li a{
+    border-bottom: 1px solid var(--achtergrond-tertair);
+    color: var(--textkleur-secundair);
+}
+
+/* socials plaatjes */
+.socials{
+    max-width: 26.250em;
+    margin: 3em auto 0 auto; 
+    border-top: 1px solid rgba(77,77,79,.2);
+    border-bottom: 1px solid rgba(77,77,79,.2);
+}
+
+.socials img{
+    width: 1.250em;
+}
+
+.socials ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 1em;
+    padding: 0em;
+}
+
+.socials li{
+    justify-self: center;
+}
+
+article{
+    margin: none;
+    padding: none;
+}
+
+
+@media (min-width: 29.00em){
+
+    .artiekelen p, .artiekelen h2{
+        font-size: 1.063em;
+    }
+
+    .artiekelen{
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .caroussel{
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1em;
+        max-width: 25.000em;
+      }
+    
+      .car2{
+        display: block;
+      }
+
+    
+}
+
+@media (min-width: 46.875em){
+
+    .artiekelen{
+        transform: translate(-2.8em,0);
+        max-width: 36.00em;
+    }
+
+    .art1 img, .art2 img, .art3 img, .art4 img, .art5 img,
+    .art6 img, .art7 img, .art8 img, .art9 img, .art10 img,
+    .art11 img, .art12 img, .art13 img, .art14 img,
+    .art15 img, .art16 img, .art17 img, .art18 img,
+    .art19 img, .art20 img{
+        max-width: 36.000em;
+    }
+
+    .caroussel{
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 1em;
+        max-width: 100%;
+        transform: translate(2.3em,0);
+        margin: 3em auto 0 auto;
+        width: 46.250em;
+        
+    }
+    
+    .car3{
+        display: block;
+    }
+
+    .footerContent{
+        max-width: 45em;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: start;
+    }
+
+    .socials{
+        max-width: 45em;
+    }
+    
+    .socials ul{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .opening .styling{
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1em;
+        max-width: 47em;
+        transform: translate(2.7em,0);
+        margin: 0 auto 0 auto;
+    }
+
+    .opening .styling h1{
+        padding: 0;   
+        margin: 0;
+        justify-self: center;
+        max-width: 15.5em;
+        font-size: 1.500em;
+    }
+
+    .opening .styling p{
+        padding: 0;
+        margin: 0 0 0 -5em;
+        justify-self: center;
+        max-width: 23em;
+    }
+
+    main{
+        margin-top: 10em;
+    }
+}
+
+@media (min-width: 61.125em) {
+
+    .artiekelen{
+        max-width: 47.063em;
+    }
+
+    .art1 img, .art2 img, .art3 img, .art4 img, .art5 img,
+    .art6 img, .art7 img, .art8 img, .art9 img, .art10 img,
+    .art11 img, .art12 img, .art13 img, .art14 img,
+    .art15 img, .art16 img, .art17 img, .art18 img,
+    .art19 img, .art20 img{
+        max-width: 47.063em;
+    }
+
+    .opening .styling{
+       transform: translate(-1.3em,0);
+       max-width: 50em; 
+    }
+
+    .opening .styling p{
+        font-size: 1.063em;
+        margin: 0;
+        min-width: 26em;
+    }
+
+    .opening .styling h1{
+        max-width: 14.5em;
+    }
+
+    .caroussel{
+        width: 52.875em;
+        transform: translate(0.1em,0);
+    }
+
+    .footerContent{
+        max-width: 52em;
+    }
+}
+
+@media (min-width: 74.063em) {
+
+    .artiekelen{
+        max-width: 50.625em;
+    }
+
+    .art1 img, .art2 img, .art3 img, .art4 img, .art5 img,
+    .art6 img, .art7 img, .art8 img, .art9 img, .art10 img,
+    .art11 img, .art12 img, .art13 img, .art14 img,
+    .art15 img, .art16 img, .art17 img, .art18 img,
+    .art19 img, .art20 img{
+        max-width: 50.625em;
+    }
+
+    .opening .styling{
+        max-width: 53.625em;
+    }
+
+    .opening .styling h1{
+        max-width: 16.5em;
+    }
+
+    .caroussel {
+        width: 56.3em;
+    }
+
+    .footerContent{
+        max-width: 56em;
+    }
+}
+
+@media (min-width: 89.063em) {
+
+    .artiekelen{
+        max-width: 62.250em;
+    }
+
+    .art1 img, .art2 img, .art3 img, .art4 img, .art5 img,
+    .art6 img, .art7 img, .art8 img, .art9 img, .art10 img,
+    .art11 img, .art12 img, .art13 img, .art14 img,
+    .art15 img, .art16 img, .art17 img, .art18 img,
+    .art19 img, .art20 img{
+        max-width: 62.250em;
+    }
+
+    .opening .styling{
+        transform: translate(0.7em,0);
+        max-width: 70em;
+    }
+
+    .opening .styling h1{
+        max-width: 20.6em;
+    }
+
+    .opening .styling p{
+        min-width: 35em;
+    }
+
+    .caroussel {
+        width: 67.9em;
+    }
+
+    .footerContent{
+        max-width: 68em;
+    }
+}

@@ -18,13 +18,13 @@ function HamburgerOpenen() {
 
 
     //als de hamburger menu display none heeft wordt het een block of andersom
-    if (hamburgermenu.style.display === "none") {
+    if (hamburgermenu.style.display === "block") {
         
-        hamburgermenu.style.display = "block";
+        hamburgermenu.style.display = "none";
         
     } else {
         
-        hamburgermenu.style.display = "none";
+        hamburgermenu.style.display = "block";
     }
 };
 
