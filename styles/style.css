@@ -121,6 +121,11 @@ img.logo{
 
 }
 
+.uitklap li a{
+  text-decoration: none;
+  color: var(--achtergrond-tertair)
+}
+
 button{
   background: none;
   width: 7em;
